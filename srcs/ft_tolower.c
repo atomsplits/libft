@@ -6,13 +6,15 @@
 /*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:37:20 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 11:37:42 by mpankrat         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:53:12 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_tolower(char c)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		c += 32;
+		return (c + 32);
 	return (c);
 }

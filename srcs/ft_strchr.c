@@ -6,7 +6,7 @@
 /*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:38:02 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 20:23:32 by mpankrat         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:56:34 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char	*ft_strchr(const char *s, int c)
 {
 	if (s == NULL)
 		return (NULL);
-	while (*s++)
+	while (*s)
 	{
-		if (*s == (char)c)
+		if (*s++ == (char)c)
 			return ((char *)--s);
 	}
 	if (*s == (char)c)

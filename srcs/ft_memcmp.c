@@ -6,7 +6,7 @@
 /*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:57:29 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 20:31:13 by mpankrat         ###   ########.fr       */
+/*   Updated: 2026/10/28 15:06:46 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (n-- > 0)
 	{
 		if (*a++ != *b++)
-			return (*a - *b);
+		{
+			if (a[-1] < b[-1])
+				return (-1);
+			else
+				return (1);
+		}
 	}
 	return (0);
 }

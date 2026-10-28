@@ -6,13 +6,13 @@
 /*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:02:54 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 11:03:22 by mpankrat         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:41:30 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
-	if (c <= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

@@ -6,13 +6,15 @@
 /*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:35:15 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 11:37:14 by mpankrat         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:52:35 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(char c)
+#include "libft.h"
+
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		c -= 32;
+		return (c - 32);
 	return (c);
 }
