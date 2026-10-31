@@ -3,19 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 11:06:40 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 19:43:02 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:17:25 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:17:26 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int		i;
 	unsigned char *p = s;
-	i = 0;
 	while (n > 0)
 	{
 		*p = c;

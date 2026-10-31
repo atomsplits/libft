@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 11:03:50 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 11:05:50 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:14:16 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:14:23 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
 	if (c >= 0x20 && c <= 0x7E)
 		return (1);

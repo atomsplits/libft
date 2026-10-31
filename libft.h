@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 19:40:58 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/28 16:23:15 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:21:57 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:22:20 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ typedef struct s_list
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
-int		ft_lstsize(t_list *lst);
+unsigned int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));

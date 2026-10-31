@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 11:23:40 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 20:18:55 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:17:12 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:17:12 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t count)

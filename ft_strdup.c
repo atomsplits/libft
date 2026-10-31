@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 13:18:12 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 13:21:01 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:18:50 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:18:51 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
 char	*ft_strdup(char *src)

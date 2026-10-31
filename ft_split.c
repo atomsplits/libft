@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/28 17:11:05 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/28 17:11:22 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:18:06 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:18:06 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 int count(const char *str, char c)
 {
-  int c;
+  int a;
   int x;
 
-  c = 0;
+  a = 0;
   x = 0;
   while (*str)
   {
     if (*str != c && x == 0)
     {
       x = 1;
-      c++;
+      a++;
     }
     else if (*str == c)
       x = 0;
     str++;
   }
-  return (c);
+  return (a);
 }
 
 static char *fill(const char *str, int start, int end)

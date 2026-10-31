@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 11:08:28 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/27 19:43:25 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:10:59 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:14:09 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

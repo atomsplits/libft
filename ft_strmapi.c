@@ -1,7 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/31 15:20:29 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:20:35 by mpankrat         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
   char *str;
-  unsigned int index;
+  unsigned int i;
 
   if (s == NULL || f == NULL)
     return (NULL);

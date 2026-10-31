@@ -3,23 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpankrat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mpankrat <mpankrat@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 11:41:58 by mpankrat          #+#    #+#             */
-/*   Updated: 2026/10/28 14:58:33 by mpankrat         ###   ########.fr       */
+/*   Created: 2026/10/31 15:21:18 by mpankrat          #+#    #+#             */
+/*   Updated: 2026/10/31 15:21:19 by mpankrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	l;
+	int		len;
 
-	l = ft_strlen(s);
-	while (l >= 0)
+	len = ft_strlen(s);
+	while (len >= 0)
 	{
-		if (s[l--] == (char)c)
-			return ((char *)&s[++l]);
+		if ((char)c == *(s + len))
+			return ((char *)(s + len));
+		--len;
 	}
 	return (NULL);
 }
