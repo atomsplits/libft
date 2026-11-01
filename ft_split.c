@@ -31,35 +31,55 @@ static size_t	ft_countword(char const *s, char c)
 	return (count);
 }
 
+void	ft_free(char **lst)
+{
+	int	i;
+
+	if (!lst)
+		return ;
+	i = 0;
+	while (lst[i])
+	{
+		free(lst[i]);
+		i++;
+	}
+	free(lst);
+}
+
+bool	ft_jumpchar(const char **s, char c)
+{
+	while (*(*s) == c)
+		(*s)++;
+	return (true);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**lst;
 	size_t	word_len;
 	int		i;
 
-	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
-	if (s == NULL || lst == NULL)
+	if (!s)
+		return (NULL);
+	lst = malloc((ft_countword(s, c) + 1) * sizeof(char *));
+	if (!lst)
 		return (NULL);
 	i = 0;
-	while (*s)
+	while (*s && ft_jumpchar(&s, c) && *s)
 	{
-		while (*s == c && *s)
-			s++;
-		if (*s)
-		{
-			if (!ft_strchr(s, c))
-				word_len = ft_strlen(s);
-			else
-				word_len = ft_strchr(s, c) - s;
-			lst[i++] = ft_substr(s, 0, word_len);
-			s += word_len;
-		}
+		word_len = ft_strchr(s, c) - s;
+		if (!ft_strchr(s, c))
+			word_len = ft_strlen(s);
+		lst[i] = ft_substr(s, 0, word_len);
+		if (!lst[i++])
+			return (ft_free(lst), NULL);
+		s += word_len;
 	}
 	lst[i] = NULL;
 	return (lst);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
 /*
 int main() {
