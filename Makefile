@@ -10,13 +10,14 @@ SRCS = \
 	ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 OBJS = $(SRCS:.c=.o)
 
-CC = gcc
+CC = cc
+AR = ar
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) -r $@ $?
+	$(AR) -rcs $@ $?
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $?
