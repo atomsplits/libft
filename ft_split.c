@@ -31,7 +31,7 @@ static size_t	ft_countword(char const *s, char c)
 	return (count);
 }
 
-void	ft_free(char **lst)
+static void	ft_free(char **lst)
 {
 	int	i;
 
@@ -46,7 +46,7 @@ void	ft_free(char **lst)
 	free(lst);
 }
 
-bool	ft_jumpchar(const char **s, char c)
+static bool	ft_jumpchar(const char **s, char c)
 {
 	while (*(*s) == c)
 		(*s)++;
