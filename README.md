@@ -168,7 +168,7 @@ Writing code according to the 42 Norm.
 Using Makefiles to automate compilation.
 👤 Author
 
-[Maxim Pankratov]
+[Rivers Pankratov]
 
 42 Student
 
