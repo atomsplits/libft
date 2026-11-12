@@ -1,7 +1,7 @@
 _This project has been created as part of the 42 curriculum by mpankrat._
 
 
-# Libft
+# Description
 
 Your very first own C library
 
@@ -76,7 +76,8 @@ Functions for handling singly linked lists:
 `ft_lstclear`
 `ft_lstiter`
 `ft_lstmap`
-⚙️ Compilation
+
+# Instructions
 
 The project uses a Makefile to compile the source files into a static library.
 
@@ -154,6 +155,11 @@ libft/
 ├── ft_bzero.c
 ├── ...
 
+# Resources
+
+AI was used to explain the functionality of certain functions such as ft_split, ft_substr and ft_memchr.
+StackOverflow, GeeksForGeeks and YouTube were used to gain a fundamental understanding of core concepts in the C language.
+
 What I Learned
 
 Through this project, I gained experience with:
@@ -166,11 +172,10 @@ Linked lists and data structures.
 Creating and managing static libraries.
 Writing code according to the 42 Norm.
 Using Makefiles to automate compilation.
-👤 Author
 
-[Maxim Pankratov]
+Author:
 
-42 Student
+Rivers Pankratov
 
 GitHub: atomsplits
 42 Login: mpankrat

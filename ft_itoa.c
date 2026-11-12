@@ -66,6 +66,6 @@ char	*ft_itoa(int n)
 	}
 	if (n < 0)
 		res[0] = '-';
-	res[len] = 0;
+	res[len] = '\0';
 	return (res);
 }
